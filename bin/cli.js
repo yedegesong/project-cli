@@ -14,6 +14,6 @@ program
 program
   .command('mock')
   .action(() => {
-    console.log('进来触发mock')
+    require('../packages/@mock/mock-server/app.js')
   })
 program.parse(process.argv)
