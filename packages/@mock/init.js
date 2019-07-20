@@ -31,7 +31,7 @@ if (fse.existsSync(mockDir)) {
   const watcher = chokidar.watch(mockDir, {
     persistent: true
   })
-  watcher.on('change', (path)=>{
+  watcher.on('change', ()=>{
     reload()
   })
 } else {

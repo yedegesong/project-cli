@@ -36,7 +36,7 @@ my-cli create yourProject
 ```js
   module.exports = function (Router,Mock) {
     const serverRouters = new Router({
-      prefix: '/test'
+      prefix: '/mock'
     })
     serverRouters.get('/', async (ctx) => {
       ctx.body = {
@@ -62,7 +62,7 @@ my-cli create yourProject
 
 **第二步：执行my-cli mock**
 
-**第三步：打开浏览器**[**http://localhost:3000/test**](http://localhost:3000/test/)** 可以看到你自己编写的Mock数据**
+**第三步：打开浏览器**[**http://localhost:3000/mock**](http://localhost:3000/test/)** 可以看到你自己编写的Mock数据**
 
 
 
