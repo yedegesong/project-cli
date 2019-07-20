@@ -43,6 +43,7 @@ async function create(projectName) {
    * 处理终端指令
    */
   if (actions && actions === 1) {
+    // 判断文件不存在
     if (!fse.existsSync(targetDir)) {
       const spinner = ora('模板拉取中...').start()
       try {

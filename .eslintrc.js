@@ -21,6 +21,7 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "func-names": 0,
         "no-console": "off", // 开启console
         "global-require": "off", // 关闭全局导入
         "semi": ["error", "never"],// 配置不开启分号;

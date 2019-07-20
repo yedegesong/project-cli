@@ -28,10 +28,11 @@ my-cli create yourProject
 
 ### 启动mock服务模拟接口
 
-**第一步：在工程下创建一个mock/index.js文件**
+执行：my-cli mock 
+
+会发现在执行命令的目录下出现mock目录结构
 
 案列结构：
-
 ```js
   module.exports = function (Router,Mock) {
     const serverRouters = new Router({

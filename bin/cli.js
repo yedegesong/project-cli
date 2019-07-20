@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 const program = require('commander')
+
 program
   .version(require('../package').version)
   .description('构建工程模板')
@@ -14,6 +15,6 @@ program
 program
   .command('mock')
   .action(() => {
-    require('../packages/@mock/mock-server/app.js')
+    require('../packages/@mock/init.js')
   })
 program.parse(process.argv)
